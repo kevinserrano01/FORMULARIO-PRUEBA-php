@@ -16,12 +16,13 @@
     $FormColor = "";
     $FormFechaNac = "";
     $FormFechaHora = "";
+    $FormArchivo = "";
     $FormNroCasa = "";
     $FormRango = "";
     $FormBuscador = "";
     $FormLinkIg = "";
     if($_POST){
-
+        
 
         $FormNombre = (isset($_POST['FormNombre']))?$_POST['FormNombre']:"";
         $FormApellido = (isset($_POST['FormApellido']))?$_POST['FormApellido']:"";
@@ -42,6 +43,7 @@
         $FormColor = (isset($_POST['FormColor']))?$_POST['FormColor']:"";
         $FormFechaNac = (isset($_POST['FormFechaNac']))?$_POST['FormFechaNac']:"";
         $FormFechaHora = (isset($_POST['FormFechaHora']))?$_POST['FormFechaHora']:"";
+        $FormArchivo = (isset($_POST['FormFechaHora']))?$_POST['FormArchivo']:"";
         $FormNroCasa = (isset($_POST['FormNroCasa']))?$_POST['FormNroCasa']:"";
         $FormRango = (isset($_POST['FormRango']))?$_POST['FormRango']:"";
         $FormBuscador = (isset($_POST['FormBuscador']))?$_POST['FormBuscador']:"";
@@ -98,6 +100,7 @@
             <h4><?php echo ($FormColor)?"Color seleccionado: ".$FormColor:"";?></h4>
             <h4><?php echo ($FormFechaNac)?"Fecha de nacimiento: ".$FormFechaNac:"";?></h4>
             <h4><?php echo ($FormFechaHora)?"Fecha y Hora: ".$FormFechaHora:"";?></h4>
+            <h4><?php echo ($FormArchivo)?"FNombre del archivo subido: ".$FormArchivo:"";?></h4>
             <h4><?php echo ($FormNroCasa)?"Numero de casa: ".$FormNroCasa:"";?></h4>
             <h4><?php echo ($FormRango)?"Rango Seleccionado: ".$FormRango:"";?></h4>
             <h4><?php echo ($FormBuscador)?"Buscador: ".$FormBuscador:"";?></h4>
@@ -188,7 +191,7 @@
                 <br> <br>
                 <!-- seleccionar archivo -->
                 <label for="file">Entregar tarea: </label>
-                <input type="file" name="archivo" id="archivo">
+                <input type="file" name="FormArchivo" id="archivo">
         
                 <br> <br>
         
